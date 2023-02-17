@@ -16,12 +16,18 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        
+
         Context context = getApplicationContext();
         CharSequence text = "create";
         int duration = Toast.LENGTH_SHORT;
         Toast toast = Toast.makeText(context, text, duration);
         toast.show();
+
+        Log.i(TAG, "info");
+        Log.e(TAG, "error");
+        Log.w(TAG, "warning");
+        Log.d(TAG, "debug");
+        Log.v(TAG, "verbose");
     }
     @Override
     protected void onDestroy(){
