@@ -1,6 +1,8 @@
-  package com.example.myapplication;
+package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Context;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.Toast;
@@ -14,37 +16,72 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        
+        Context context = getApplicationContext();
+        CharSequence text = "create";
+        int duration = Toast.LENGTH_SHORT;
+        Toast toast = Toast.makeText(context, text, duration);
+        toast.show();
     }
     @Override
     protected void onDestroy(){
         super.onDestroy();
 
+        Context context = getApplicationContext();
+        CharSequence text = "destroy";
+        int duration = Toast.LENGTH_SHORT;
+        Toast toast = Toast.makeText(context, text, duration);
+        toast.show();
     }
     @Override
     protected void onStop(){
         super.onStop();
 
+        Context context = getApplicationContext();
+        CharSequence text = "stop";
+        int duration = Toast.LENGTH_SHORT;
+        Toast toast = Toast.makeText(context, text, duration);
+        toast.show();
     }
     @Override
     protected void onStart(){
         super.onStart();
 
+        Context context = getApplicationContext();
+        CharSequence text = "start";
+        int duration = Toast.LENGTH_SHORT;
+        Toast toast = Toast.makeText(context, text, duration);
+        toast.show();
     }
     @Override
     protected void onPause(){
         super.onPause();
 
+        Context context = getApplicationContext();
+        CharSequence text = "pause";
+        int duration = Toast.LENGTH_SHORT;
+        Toast toast = Toast.makeText(context, text, duration);
+        toast.show();
     }
     @Override
     protected void onResume(){
         super.onResume();
 
+        Context context = getApplicationContext();
+        CharSequence text = "resume";
+        int duration = Toast.LENGTH_SHORT;
+        Toast toast = Toast.makeText(context, text, duration);
+        toast.show();
     }
 
     @Override
     protected void onRestart(){
         super.onRestart();
-        
+
+        Context context = getApplicationContext();
+        CharSequence text = "restart";
+        int duration = Toast.LENGTH_SHORT;
+        Toast toast = Toast.makeText(context, text, duration);
+        toast.show();
     }
 }
